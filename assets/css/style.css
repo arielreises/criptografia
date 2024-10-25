@@ -156,6 +156,19 @@ body {
     margin-top: 60px;
 }
 
+.left-align {
+    text-align: left; /* Alinha o texto à esquerda */
+}
+
+.question-box {
+    border: 2px solid #007bff; /* Borda azul */
+    border-radius: 8px; /* Bordas arredondadas */
+    padding: 15px; /* Espaçamento interno */
+    margin-bottom: 15px; /* Espaçamento entre as perguntas */
+    background-color: #f8f9fa; /* Cor de fundo clara */
+}
+
+
 /* Estilos do rodapé */
 footer {
     background-color: #f0f0f0;
