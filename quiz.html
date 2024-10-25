@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiz - Criptografia</title>
+    <title>Quiz - Criptografia - Fatec Jundiaí</title>
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
@@ -21,27 +21,25 @@
     </header>
 
     <div class="container">
-        <h1>Quiz sobre Criptografia</h1>
-        <p>
-            Teste seus conhecimentos sobre criptografia e veja o quanto você aprendeu!
-        </p>
-        <p>
-            Em breve, teremos perguntas interativas para você responder.
-        </p>
-        <hr>
-        <p>Quer aprender mais sobre criptografia?</p>
-        <button class="green-button" onclick="location.href='https://www.fatecjd.edu.br/portal/'">Conhecer os cursos da Fatec</button>
-        <h2></h2>
-        <h3>Clica logo!!!</h3>
-
-    </div>
-    <br><br><br>
+        <h1>QUIZ SOBRE CRIPTOGRAFIA</h1>
+        <p class="left-align">Teste seus conhecimentos sobre criptografia e veja o quanto você aprendeu!</p>
+        <div id="quiz-container"></div>
+        <button id="submit-button" >Finalizar Quiz</button>
+        <button id="retry-button" class="red-button" style="display: none;">Tentar Novamente</button>
+        <p id="results"></p>
+        <div id="certificate" style="display: none;">
+            <button id="certificate-button" class="green-button" onclick="window.location.href='https://forms.gle/cw7iKMXps4XuA5kk7'">Me cadastrar para receber meu certificado</button>
+            <h2></h2>
+            <h3>Clica logo!!!</h3>
+        </div>
     </div>
 
     <!-- Rodapé -->
-    <footer><br>
-        Criado por Ariel Reises para o Fatec Portas Abertas – Ciência, Tecnologia e Cultura na Praça<br>
-            <br>
+    <footer>
+        <br>Criado por Ariel Reises para o Fatec Portas Abertas – Ciência, Tecnologia e Cultura na Praça<br><br>
     </footer>
+
+    <!-- Script do Quiz -->
+    <script src="./assets/js/quiz.js"></script>
 </body>
 </html>
