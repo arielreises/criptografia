@@ -1,18 +1,3 @@
-@media (max-width: 600px) {
-    header nav ul {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    
-    header nav ul li {
-        margin: 10px 0;
-    }
-    
-    body {
-        margin-top: 120px; /* Aumenta o espaço para o cabeçalho em telas pequenas */
-    }
-}
-
 img {
     max-width: 100%;
     height: auto;
@@ -95,36 +80,75 @@ textarea {
     resize: none;
 }
 
+/* Estilos para o cabeçalho */
 header {
     background-color: #007bff;
     color: #fff;
     padding: 10px 0;
     text-align: center;
+    width: 100%;
     position: fixed;
     top: 0;
-    width: 100%;
     z-index: 1000;
 }
 
+/* Navegação principal */
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px; /* Adiciona espaçamento nas laterais */
+    max-width: 1200px;
+    margin: 0 auto; /* Centraliza o conteúdo no desktop */
+}
+
+/* Links da navegação */
 header nav ul {
     list-style-type: none;
+    display: flex;
     margin: 0;
     padding: 0;
-    display: flex;
-    justify-content: center;
+    flex-wrap: nowrap; /* Mantém os itens na mesma linha */
 }
 
 header nav ul li {
-    margin: 0 15px;
+    margin: 0 15px; /* Espaçamento entre os itens */
 }
 
 header nav ul li a {
     color: #fff;
     text-decoration: none;
+    font-size: 16px; /* Tamanho de fonte para desktop */
+    transition: color 0.3s;
 }
 
 header nav ul li a:hover {
-    text-decoration: underline;
+    color: #ffdd57; /* Cor de destaque ao passar o mouse */
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    header nav {
+        padding: 0 10px; /* Reduz o padding em telas menores */
+    }
+
+    header nav ul li {
+        margin: 0 10px; /* Reduz a margem entre os itens */
+    }
+
+    header nav ul li a {
+        font-size: 14px; /* Reduz o tamanho da fonte em telas menores */
+    }
+}
+
+@media (max-width: 480px) {
+    header nav ul li {
+        margin: 0 5px; /* Mais compacto para telas de celular */
+    }
+
+    header nav ul li a {
+        font-size: 12px; /* Reduz ainda mais o tamanho da fonte em telas pequenas */
+    }
 }
 
 /* Adiciona margem no topo para compensar o cabeçalho fixo */
